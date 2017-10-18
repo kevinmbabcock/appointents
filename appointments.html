@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Appointments</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill out the form below to schedule an appointment</h1>
+      <form id="appointment">
+        <div class="form-group">
+          <label for="firstName">First name:</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last name:</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="date">Enter desired date:</label>
+          <input id="date" class="form-control" type="text">
+        </div>
+        <div class="timeOfDay">
+          <label for="timeOfDay">Desired time of day:</label>
+          <input id="timeOfDay" class="form-control" type="text">
+        </div>
+        <p></p>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="display">
+        <p></p>
+        <p>Name: <span class="firstName"></span> <span class="lastName"></span><p/>
+        <p>Date: <span class="date"></span></p>
+        <p>Time: <span class="time"></span></p>
+
+      </div>
+    </div>
+  </body>
+</html>
